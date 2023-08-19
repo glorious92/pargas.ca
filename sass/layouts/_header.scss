@@ -1,5 +1,33 @@
 .header {
     height: 100vh;
-    background: url(../images/hero2.jpeg) center top no-repeat;
+    background: url(../images/hero3.jpeg) center top no-repeat;
     background-size: cover;
+    position: relative;
+
+    .hero {
+        .container {
+            .hero-content {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 35%;
+                right: 50%;
+
+                h1 {
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 19px;
+                    margin: 1rem 0;
+                }
+
+                div {
+                    display: flex;
+                    justify-content: end;
+                }
+
+            }
+        }
+    }
 }

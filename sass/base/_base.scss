@@ -19,7 +19,6 @@ p {
 a {
     text-decoration: none;
     color: $dark-color;
-    font-size: 16px;
     cursor: pointer;
 }
 
@@ -38,4 +37,5 @@ img {
 // body
 body {
     direction: rtl;
+    height: 3000px;
 }

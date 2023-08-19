@@ -3,8 +3,10 @@ header {
 
     .navbar-wrapper {
         width: 100%;
+        position: fixed;
         border-bottom: 2px solid $primary-color;
-        background: rgba(255, 255, 255, 0.648);
+        background: rgba(255, 255, 255, 0.9);
+        z-index: 100;
 
         .container {
             .navbar {
