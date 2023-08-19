@@ -30,13 +30,13 @@
     .header {
         display: flex;
         justify-content: center;
-        background: url(../images/hero-small.jpeg) center top no-repeat;
+        background: url(../images/hero-small-2.jpeg) center top no-repeat;
         background-size: cover;
 
         .hero {
             display: flex;
             align-items: end;
-            padding-bottom: 4rem;
+            padding-bottom: 7rem;
             justify-content: center;
             text-align: center;
 
@@ -64,7 +64,7 @@
 
                     p {
                         font-size: 16px;
-                        margin: 2rem 0;
+                        margin: 3rem 0;
                         text-shadow: 10px 10px 25px purple,
                             -10px 10px 25px purple,
                             -10px -10px 25px purple,
