@@ -111,6 +111,8 @@ header {
             padding: 0.5rem 1rem; }
       header .navbar-wrapper .container .navbar .header-logo {
         padding: 0.7rem 0; }
+        header .navbar-wrapper .container .navbar .header-logo img {
+          width: 200px; }
 
 .free-menu {
   position: absolute;
