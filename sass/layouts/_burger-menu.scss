@@ -1,7 +1,7 @@
 .free-menu {
     position: absolute;
     left: 0;
-    bottom: 2%;
+    bottom: 0;
     top: 0;
     right: 0;
     background: $light-color;
@@ -34,10 +34,10 @@
 .free-menu .copy {
     position: absolute;
     left: 50%;
-    top: 95%;
+    top: 90%;
     color: $dark-color;
     z-index: 101;
-    font-size: 25px;
+    font-size: 20px;
     transform: translate(-50%, 0);
 }
 
