@@ -122,10 +122,11 @@
                         display: flex;
                         align-items: center;
                         flex-direction: column;
+                        padding: 1rem;
 
                         &>i:nth-child(3) {
                             display: flex;
-                            padding: 1 0rem;
+                            margin-top: 2rem;
                         }
 
                         &>i:nth-child(2) {
