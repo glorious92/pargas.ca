@@ -1,0 +1,54 @@
+.free-menu {
+    position: absolute;
+    left: 0;
+    bottom: 2%;
+    top: 0;
+    right: 0;
+    background: $light-color;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    transition: $delay;
+    z-index: 90;
+
+    p {
+        font-size: 14px;
+    }
+
+
+}
+
+.free-menu .close {
+    position: absolute;
+    cursor: pointer;
+    left: 90%;
+    top: 5%;
+    color: $dark-color;
+    z-index: 100;
+    font-size: 25px;
+}
+
+.free-menu .copy {
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    color: $dark-color;
+    z-index: 101;
+    font-size: 25px;
+    transform: translate(-50%, 0);
+}
+
+.free-menu ul {
+    padding-top: 3rem;
+}
+
+.free-menu li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    border-bottom: 2px solid $dark-color;
+}

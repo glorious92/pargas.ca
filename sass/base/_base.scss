@@ -8,8 +8,6 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    font-family: iran-sans;
 }
 
 p {
@@ -36,6 +34,7 @@ img {
 
 // body
 body {
+    font-family: iran-sans;
     direction: rtl;
     height: 3000px;
 }

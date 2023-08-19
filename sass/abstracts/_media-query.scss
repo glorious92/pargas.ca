@@ -1,1 +1,119 @@
-@media (max-width:1024px) {}
+// up to 1024px
+@media (max-width:1024px) {
+    .header {
+        .hero {
+            .container {
+                .hero-content {
+
+                    h1 {
+                        font-size: 30px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        margin: 1rem 0;
+                    }
+
+                    div {
+                        display: flex;
+                        justify-content: start;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// up to 840px
+@media (max-width:840px) {
+
+    .header {
+        display: flex;
+        justify-content: center;
+        background: url(../images/hero-small.jpeg) center top no-repeat;
+        background-size: cover;
+
+        .hero {
+            display: flex;
+            align-items: end;
+            padding-bottom: 4rem;
+            justify-content: center;
+            text-align: center;
+
+            .container {
+                display: flex;
+                justify-content: center;
+
+                .hero-content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    justify-self: center;
+                    position: inherit;
+                    top: 0;
+                    right: 0;
+
+                    h1 {
+                        font-size: 35px;
+                        text-shadow: 10px 10px 25px purple,
+                            -10px 10px 25px purple,
+                            -10px -10px 25px purple,
+                            10px -10px 25px purple;
+                        color: $light-color;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        margin: 2rem 0;
+                        text-shadow: 10px 10px 25px purple,
+                            -10px 10px 25px purple,
+                            -10px -10px 25px purple,
+                            10px -10px 25px purple;
+                        color: $light-color;
+                    }
+
+
+                    div {
+                        display: block;
+                    }
+
+                }
+            }
+        }
+    }
+
+    header {
+        .navbar-wrapper {
+            .container {
+                .navbar {
+                    .header-menu {
+                        &-buttons {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// up to 700px
+@media (max-width:700px) {
+
+
+    header {
+        .navbar-wrapper {
+            .container {
+                .navbar {
+                    i {
+                        display: block;
+                    }
+
+                    .header-menu {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
