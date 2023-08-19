@@ -58,11 +58,17 @@ body {
 .selected {
   border-bottom: 2px solid purple; }
 
+.header {
+  height: 100vh;
+  background: url(../images/hero2.jpeg) center top no-repeat;
+  background-size: cover; }
+
 header {
   width: 100%; }
   header .navbar-wrapper {
     width: 100%;
-    border-bottom: 2px solid purple; }
+    border-bottom: 2px solid purple;
+    background: rgba(255, 255, 255, 0.648); }
     header .navbar-wrapper .container .navbar {
       display: flex;
       align-items: center;

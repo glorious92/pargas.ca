@@ -4,6 +4,7 @@ header {
     .navbar-wrapper {
         width: 100%;
         border-bottom: 2px solid $primary-color;
+        background: rgba(255, 255, 255, 0.648);
 
         .container {
             .navbar {
@@ -30,7 +31,6 @@ header {
                 .header-logo {
                     padding: 0.7rem 0;
                 }
-
             }
         }
     }
