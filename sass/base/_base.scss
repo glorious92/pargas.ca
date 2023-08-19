@@ -1,0 +1,41 @@
+html {
+    font-size: 12px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: iran-sans;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: $dark-color;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+ul,
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+// body
+body {
+    direction: rtl;
+}

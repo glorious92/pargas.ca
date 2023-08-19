@@ -1,0 +1,17 @@
+{
+  "name": "pargas.ca",
+  "version": "1.0.0",
+  "description": "PARGAS immigration &amp; legal professional",
+  "main": "index.js",
+  "dependencies": {
+    "node": "^20.5.0",
+    "node-bin-setup": "^1.1.3",
+    "node-sass": "^9.0.0"
+  },
+  "scripts": {
+    "sass": "node-sass -w sass/ -o resources/styles"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

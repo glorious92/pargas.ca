@@ -1,0 +1,79 @@
+@font-face {
+  font-family: iran-sans;
+  src: url(/resources/fonts/IranSans.woff); }
+
+html {
+  font-size: 12px; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: iran-sans; }
+
+p {
+  line-height: 1.6; }
+
+a {
+  text-decoration: none;
+  color: #1e1e1e;
+  font-size: 16px;
+  cursor: pointer; }
+
+ul,
+li {
+  list-style: none;
+  cursor: pointer; }
+
+img {
+  display: block;
+  margin: 0 auto; }
+
+body {
+  direction: rtl; }
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem; }
+
+.btn-primary {
+  background: purple;
+  color: #f5f5f5; }
+
+.btn-outline {
+  border: 2px solid purple;
+  background: #f5f5f5;
+  color: purple; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem; }
+
+.selected {
+  border-bottom: 2px solid purple; }
+
+header {
+  width: 100%; }
+  header .navbar-wrapper {
+    width: 100%;
+    border-bottom: 2px solid purple; }
+    header .navbar-wrapper .container .navbar {
+      display: flex;
+      align-items: center;
+      padding: 1rem 0;
+      justify-content: space-between; }
+      header .navbar-wrapper .container .navbar .header-menu {
+        display: flex;
+        align-items: center; }
+        header .navbar-wrapper .container .navbar .header-menu-links {
+          display: flex; }
+          header .navbar-wrapper .container .navbar .header-menu-links li a {
+            padding: 0.5rem 1rem; }
+      header .navbar-wrapper .container .navbar .header-logo {
+        padding: 0.7rem 0; }

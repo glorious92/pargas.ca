@@ -1,0 +1,37 @@
+header {
+    width: 100%;
+
+    .navbar-wrapper {
+        width: 100%;
+        border-bottom: 2px solid $primary-color;
+
+        .container {
+            .navbar {
+                display: flex;
+                align-items: center;
+                padding: $padding 0;
+                justify-content: space-between;
+
+                .header-menu {
+                    display: flex;
+                    align-items: center;
+
+                    &-links {
+                        display: flex;
+
+                        li {
+                            a {
+                                padding: 0.5rem 1rem;
+                            }
+                        }
+                    }
+                }
+
+                .header-logo {
+                    padding: 0.7rem 0;
+                }
+
+            }
+        }
+    }
+}
