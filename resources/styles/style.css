@@ -62,7 +62,8 @@ body {
   height: 100vh;
   background: url(../images/hero3.jpeg) center top no-repeat;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  box-shadow: 0 8px 6px -6px purple; }
   .header .hero .container .hero-content {
     display: flex;
     flex-direction: column;
@@ -83,8 +84,8 @@ header {
   header .navbar-wrapper {
     width: 100%;
     position: fixed;
-    border-bottom: 2px solid purple;
     background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 6px -6px purple;
     z-index: 50; }
     header .navbar-wrapper .container .navbar {
       display: flex;
@@ -228,13 +229,13 @@ header {
           right: 0; }
           .header .hero .container .hero-content h1 {
             font-size: 35px;
-            text-shadow: 10px 10px 25px purple, -10px 10px 25px purple, -10px -10px 25px purple, 10px -10px 25px purple;
-            color: #f5f5f5; }
+            text-shadow: 10px 10px 25px #f5f5f5, -10px 10px 25px #f5f5f5, -10px -10px 25px #f5f5f5, 10px -10px 25px #f5f5f5;
+            color: #1e1e1e; }
           .header .hero .container .hero-content p {
             font-size: 16px;
             margin: 3rem 0;
-            text-shadow: 10px 10px 25px purple, -10px 10px 25px purple, -10px -10px 25px purple, 10px -10px 25px purple;
-            color: #f5f5f5; }
+            text-shadow: 10px 10px 25px #f5f5f5, -10px 10px 25px #f5f5f5, -10px -10px 25px #f5f5f5, 10px -10px 25px #f5f5f5;
+            color: #1e1e1e; }
           .header .hero .container .hero-content div {
             display: block; }
   .main {

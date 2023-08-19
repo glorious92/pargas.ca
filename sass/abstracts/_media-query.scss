@@ -67,21 +67,21 @@
 
                     h1 {
                         font-size: 35px;
-                        text-shadow: 10px 10px 25px purple,
-                            -10px 10px 25px purple,
-                            -10px -10px 25px purple,
-                            10px -10px 25px purple;
-                        color: $light-color;
+                        text-shadow: 10px 10px 25px $light-color,
+                            -10px 10px 25px $light-color,
+                            -10px -10px 25px $light-color,
+                            10px -10px 25px $light-color;
+                        color: $dark-color;
                     }
 
                     p {
                         font-size: 16px;
                         margin: 3rem 0;
-                        text-shadow: 10px 10px 25px purple,
-                            -10px 10px 25px purple,
-                            -10px -10px 25px purple,
-                            10px -10px 25px purple;
-                        color: $light-color;
+                        text-shadow: 10px 10px 25px $light-color,
+                            -10px 10px 25px $light-color,
+                            -10px -10px 25px $light-color,
+                            10px -10px 25px $light-color;
+                        color: $dark-color;
                     }
 
 
