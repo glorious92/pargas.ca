@@ -9,8 +9,8 @@
     border-radius: $card-border-radius;
     padding: 6rem 6rem;
 
-    min-width: 250px;
-    min-height: 250px;
+    min-width: 200px;
+    min-height: 200px;
     text-align: center;
     margin-right: 1rem;
     margin-left: 1rem;
@@ -26,7 +26,9 @@
         position: absolute;
         top: 100%;
         left: 50%;
-        transform: translate(-50%, -150%);
+        transform: translate(-50%, -130%);
+        padding: 0.5rem 1rem;
+        font-size: 10px;
     }
 }
 
