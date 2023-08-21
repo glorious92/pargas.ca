@@ -7,14 +7,16 @@
 // residence card
 .card {
     border-radius: $card-border-radius;
-    padding: 6rem 6rem;
 
-    min-width: 200px;
-    min-height: 200px;
+    min-width: 230px;
+    min-height: 230px;
     text-align: center;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    // margin-right: 1rem;
+    // margin-left: 1rem;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     box-shadow: rgba(128, 0, 128, 0.16) 0px 3px 6px, rgba(128, 0, 128, 0.23) 0px 3px 6px;
 

@@ -26,12 +26,18 @@
     .main {
         .residence {
             .container {
+
                 .permanent {
                     grid-template-columns: repeat(2, 1fr);
+                    min-height: 600px;
+                    padding: 1rem;
+                    grid-gap: 2rem;
+                }
 
-                    .card {
-                        margin-bottom: 2rem;
-                    }
+                .temporary {
+                    min-height: 400px;
+                    padding: 1rem;
+                    grid-gap: 2rem;
                 }
             }
         }
@@ -178,18 +184,19 @@
 
         .residence {
             .container {
+                width: 90%;
 
                 .permanent,
                 .temporary {
                     grid-template-columns: repeat(1, 1fr);
-
-                    .card {
-                        margin-bottom: 1rem;
-                    }
+                    min-height: 500px;
+                    padding: 1rem;
+                    grid-gap: 2rem;
                 }
+
+
             }
         }
-
 
     }
 }
