@@ -210,9 +210,13 @@
         margin-top: 3rem;
         background: url(../images/hero22.jpeg) no-repeat center 30% fixed;
         background-size: cover;
+        height: 600px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         .slogan-banner {
-            height: 500px;
 
 
             h2 {
