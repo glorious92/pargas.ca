@@ -282,7 +282,7 @@ header {
     background: url(../images/hero22.jpeg) no-repeat center 30% fixed;
     background-size: cover; }
     .main .slogan .slogan-banner {
-      padding: 18rem 0; }
+      height: 500px; }
       .main .slogan .slogan-banner h2 {
         font-size: 45px;
         text-align: center;
@@ -472,7 +472,4 @@ header {
       align-items: center;
       margin-right: 0px; }
       .main .about-us .container .about-us-wrapper .certificate div {
-        margin: 2rem 1rem; }
-  .main .slogan {
-    background: url(../images/hero22.jpeg) no-repeat center top fixed;
-    background-size: cover; } }
+        margin: 2rem 1rem; } }
