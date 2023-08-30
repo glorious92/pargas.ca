@@ -472,4 +472,7 @@ header {
       align-items: center;
       margin-right: 0px; }
       .main .about-us .container .about-us-wrapper .certificate div {
-        margin: 2rem 1rem; } }
+        margin: 2rem 1rem; }
+  .main .slogan {
+    background: url(../images/hero22.jpeg) no-repeat center top fixed;
+    background-size: cover; } }
