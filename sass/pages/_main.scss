@@ -131,6 +131,7 @@
         }
     }
 
+    // about us
     .about-us {
         width: 100%;
         text-align: center;
@@ -202,4 +203,29 @@
 
         }
     }
+
+    // slogan banner
+    .slogan {
+        width: 100%;
+        margin-top: 3rem;
+        background: url(../images/hero22.jpeg) no-repeat center 30% fixed;
+        background-size: cover;
+
+        .slogan-banner {
+            padding: 18rem 0;
+
+
+            h2 {
+                font-size: 45px;
+                text-align: center;
+                color: $primary-color;
+                text-shadow: 10px 10px 25px $light-color,
+                    -10px 10px 25px $light-color,
+                    -10px -10px 25px $light-color,
+                    10px -10px 25px $light-color;
+
+            }
+        }
+    }
+
 }
