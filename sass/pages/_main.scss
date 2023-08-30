@@ -130,4 +130,76 @@
             }
         }
     }
+
+    .about-us {
+        width: 100%;
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            font-size: 25px;
+            position: relative;
+            background: white;
+            display: inline-block;
+        }
+
+        .container {
+            width: 100%;
+
+            .about-us-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                flex-direction: row;
+
+                .descriptions {
+                    width: 70%;
+                }
+
+                .certificate {
+                    width: 30%;
+                    display: flex;
+                    align-items: end;
+                    flex-direction: column;
+                    margin-right: 4rem;
+                    justify-content: start;
+
+
+                    div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 2rem;
+                        box-shadow: rgba(128, 0, 128, 0.16) 0px 3px 6px, rgba(128, 0, 128, 0.23) 0px 3px 6px;
+                        padding: 2rem;
+                        width: 100%;
+                        height: 100px;
+                        border-radius: $card-border-radius;
+
+                        img {
+                            object-fit: cover;
+                            object-position: left center;
+                            height: 80px;
+                            display: block;
+                        }
+                    }
+                }
+
+                p {
+                    margin-bottom: 1rem;
+                    line-height: 2;
+                    text-align: start;
+                }
+            }
+
+        }
+    }
 }
