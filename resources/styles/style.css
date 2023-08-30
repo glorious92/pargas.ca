@@ -279,7 +279,7 @@ header {
   .main .slogan {
     width: 100%;
     margin-top: 3rem;
-    background: url(../images/hero22.jpeg) no-repeat center 30% fixed;
+    background: linear-gradient(rgba(128, 0, 128, 0.7), rgba(128, 0, 128, 0.7)), url(../images/hero22.jpeg) no-repeat center 30% fixed;
     background-size: cover;
     height: 600px;
     display: flex;
