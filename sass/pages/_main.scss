@@ -232,4 +232,57 @@
         }
     }
 
+    //team member
+
+    .team {
+        padding-top: 4rem;
+
+        .container {
+            .team-up {
+                display: flex;
+                margin: 2rem 0;
+
+                .team-member {
+                    min-width: 500px;
+                    min-height: 400px;
+                    margin-left: 2rem;
+                    background: url(../images/maryam.jpeg);
+                }
+
+                .team-description {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+
+                    h4 {
+                        padding: 1rem 0;
+                    }
+                }
+            }
+
+            .team-down {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 2rem;
+
+                .team-member:nth-child(1) {
+                    background: url(../images/pantea.jpeg);
+                }
+
+                .team-member:nth-child(2) {
+                    background: url(../images/ensieh.jpeg);
+                }
+
+                .team-member:nth-child(3) {
+                    background: url(../images/babak.jpeg);
+                }
+
+                .team-member:nth-child(4) {
+                    background: url(../images/sina.jpeg);
+                }
+            }
+        }
+    }
+
 }

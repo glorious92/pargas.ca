@@ -69,6 +69,35 @@
             }
 
         }
+
+        .team {
+
+            .container {
+                .team-up {
+                    .team-member {
+                        min-width: 350px;
+                        min-height: 280px;
+                    }
+
+                    .team-description {
+                        h4 {
+                            padding: 0.5rem 0;
+                        }
+                    }
+                }
+
+                .team-down {
+                    grid-gap: 1rem;
+
+                    .team-member {
+                        min-width: 180px;
+                        min-height: 180px;
+                    }
+                }
+
+            }
+
+        }
     }
 }
 
@@ -226,6 +255,48 @@
             }
         }
 
+        .team {
+            padding-top: 4rem;
+
+            .container {
+                .team-up {
+                    display: flex;
+                    margin: 2rem 0;
+
+                    .team-member {
+                        min-width: 300px;
+                        min-height: 250px;
+                        margin-left: 2rem;
+                        background: url(../images/maryam.jpeg);
+                    }
+
+                    .team-description {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: start;
+
+                        h4 {
+                            padding: 0.5rem 0;
+                        }
+                    }
+                }
+
+                .team-down {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 2rem;
+
+                    .team-member {
+                        min-width: 180px;
+                        min-height: 220px;
+                    }
+                }
+
+            }
+
+        }
+
     }
 }
 
@@ -299,6 +370,55 @@
 
         .slogan {
             background-attachment: initial;
+        }
+
+        .team {
+            padding-top: 4rem;
+
+            .container {
+                .team-up {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 2rem 0;
+                    justify-content: center;
+                    align-items: center;
+
+                    .team-member {
+                        min-width: 400px;
+                        min-height: 400px;
+                        margin-bottom: 2rem;
+                        background: url(../images/maryam.jpeg);
+                    }
+
+                    .team-description {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+
+                        h4 {
+                            padding: 0.5rem 1.5rem;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                .team-down {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-gap: 2rem;
+
+                    .team-member {
+                        justify-self: center;
+                        min-width: 320px;
+                        min-height: 320px;
+                        background-position: center top;
+                    }
+                }
+
+            }
+
         }
     }
 }
