@@ -474,4 +474,6 @@ header {
       align-items: center;
       margin-right: 0px; }
       .main .about-us .container .about-us-wrapper .certificate div {
-        margin: 2rem 1rem; } }
+        margin: 2rem 1rem; }
+  .main .slogan {
+    background-attachment: initial; } }
