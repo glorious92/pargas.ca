@@ -570,6 +570,7 @@ header {
       .main .team .container .team-up .team-member {
         min-width: 400px;
         min-height: 400px;
+        margin: 0;
         margin-bottom: 2rem;
         background: url(../images/maryam.jpeg); }
       .main .team .container .team-up .team-description {
