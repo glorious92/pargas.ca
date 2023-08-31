@@ -331,11 +331,11 @@ header {
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 2rem; }
       .main .team .container .team-down .team-member:nth-child(1) {
-        background: url(../images/pantea.jpeg); }
-      .main .team .container .team-down .team-member:nth-child(2) {
-        background: url(../images/ensieh.jpeg); }
-      .main .team .container .team-down .team-member:nth-child(3) {
         background: url(../images/babak.jpeg); }
+      .main .team .container .team-down .team-member:nth-child(2) {
+        background: url(../images/pantea.jpeg); }
+      .main .team .container .team-down .team-member:nth-child(3) {
+        background: url(../images/ensieh.jpeg); }
       .main .team .container .team-down .team-member:nth-child(4) {
         background: url(../images/sina.jpeg); }
 
