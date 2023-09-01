@@ -322,4 +322,40 @@
         }
     }
 
+
+
+}
+
+// footer
+.footer {
+    padding: 6rem 0;
+    padding-bottom: 0;
+    text-align: center;
+    border-top: 2px solid $primary-color;
+
+    .container {
+        .social-links {
+            i {
+                font-size: 25px;
+                color: $primary-color;
+            }
+        }
+
+        .copyright {
+            padding: 1rem 0;
+        }
+
+
+    }
+
+    .designer {
+        background: $primary-color;
+        padding: 1rem 0;
+        color: $light-color;
+        margin-top: 1rem;
+
+        a {
+            color: $light-color;
+        }
+    }
 }
