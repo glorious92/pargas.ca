@@ -301,7 +301,7 @@ header {
     margin-top: 3rem;
     background: linear-gradient(rgba(128, 0, 128, 0.5), rgba(128, 0, 128, 0.5)), url(../images/hero22.jpeg) no-repeat center 30% fixed;
     background-size: cover;
-    height: 600px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center; }
