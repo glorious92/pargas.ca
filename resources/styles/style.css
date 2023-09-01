@@ -512,7 +512,8 @@ header {
             display: block; }
   .main {
     width: 100%;
-    padding: 6rem 0; }
+    padding: 6rem 0;
+    padding-bottom: 0; }
     .main .container .steps {
       display: flex;
       justify-content: center;
@@ -571,8 +572,7 @@ header {
     .main .apply .container .apply-wrapper {
       flex-direction: column; }
       .main .apply .container .apply-wrapper .apply-description {
-        text-align: center;
-        margin-bottom: 2rem; } }
+        text-align: center; } }
 
 @media (max-width: 700px) {
   header .navbar-wrapper .container .navbar i {
