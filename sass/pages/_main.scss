@@ -287,4 +287,39 @@
         }
     }
 
+    // applay now
+    .apply {
+        width: 100%;
+        background-color: $primary-color;
+        padding: 2rem;
+        margin: 4rem 0;
+
+        .container {
+            .apply-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+
+                .apply-description {
+                    color: $light-color;
+                }
+
+                .apply-buttons {
+                    display: flex;
+                    flex-direction: column;
+
+                    .btn:first-child {
+                        margin-bottom: 1rem;
+
+                    }
+
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
 }

@@ -297,6 +297,20 @@
 
         }
 
+
+        .apply {
+            .container {
+                .apply-wrapper {
+                    flex-direction: column;
+
+                    .apply-description {
+                        text-align: center;
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+        }
+
     }
 }
 

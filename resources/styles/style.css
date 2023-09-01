@@ -338,6 +338,24 @@ header {
         background: url(../images/ensieh.jpeg); }
       .main .team .container .team-down .team-member:nth-child(4) {
         background: url(../images/sina.jpeg); }
+  .main .apply {
+    width: 100%;
+    background-color: purple;
+    padding: 2rem;
+    margin: 4rem 0; }
+    .main .apply .container .apply-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .main .apply .container .apply-wrapper .apply-description {
+        color: #f5f5f5; }
+      .main .apply .container .apply-wrapper .apply-buttons {
+        display: flex;
+        flex-direction: column; }
+        .main .apply .container .apply-wrapper .apply-buttons .btn:first-child {
+          margin-bottom: 1rem; }
+        .main .apply .container .apply-wrapper .apply-buttons i {
+          margin-right: 10px; }
 
 .free-menu {
   position: absolute;
@@ -529,7 +547,12 @@ header {
         grid-gap: 2rem; }
         .main .team .container .team-down .team-member {
           min-width: 180px;
-          min-height: 220px; } }
+          min-height: 220px; }
+    .main .apply .container .apply-wrapper {
+      flex-direction: column; }
+      .main .apply .container .apply-wrapper .apply-description {
+        text-align: center;
+        margin-bottom: 2rem; } }
 
 @media (max-width: 700px) {
   header .navbar-wrapper .container .navbar i {
