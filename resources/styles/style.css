@@ -127,41 +127,41 @@ body {
       display: flex;
       justify-content: end; }
 
-header {
-  width: 100%; }
-  header .navbar-wrapper {
-    width: 100%;
-    position: absolute;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 8px 6px -6px purple;
-    z-index: 50; }
-    header .navbar-wrapper .container .navbar {
+.navbar-wrapper {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 6px -6px purple;
+  z-index: 50; }
+  .navbar-wrapper .container .navbar {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    justify-content: space-between; }
+    .navbar-wrapper .container .navbar i {
       display: flex;
+      justify-content: center;
       align-items: center;
-      padding: 1rem 0;
-      justify-content: space-between; }
-      header .navbar-wrapper .container .navbar i {
+      border: 2px solid purple;
+      border-radius: 0.5rem;
+      padding: 0.6rem;
+      display: none;
+      font-size: 20px;
+      color: purple; }
+    .navbar-wrapper .container .navbar .header-menu {
+      display: flex;
+      align-items: center; }
+      .navbar-wrapper .container .navbar .header-menu-links {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 2px solid purple;
-        border-radius: 0.5rem;
-        padding: 0.6rem;
-        display: none;
-        font-size: 20px;
-        color: purple; }
-      header .navbar-wrapper .container .navbar .header-menu {
-        display: flex;
-        align-items: center; }
-        header .navbar-wrapper .container .navbar .header-menu-links {
-          display: flex;
-          padding-left: 1.5rem; }
-          header .navbar-wrapper .container .navbar .header-menu-links li a {
-            padding: 0.5rem 1rem; }
-      header .navbar-wrapper .container .navbar .header-logo {
-        padding: 0.7rem 0; }
-        header .navbar-wrapper .container .navbar .header-logo img {
-          width: 200px; }
+        padding-left: 1.5rem; }
+        .navbar-wrapper .container .navbar .header-menu-links li a {
+          padding: 0.5rem 1rem; }
+    .navbar-wrapper .container .navbar .header-logo {
+      padding: 0.7rem 0; }
+      .navbar-wrapper .container .navbar .header-logo img {
+        width: 200px; }
 
 .main {
   width: 100%;
@@ -378,7 +378,7 @@ header {
       color: #f5f5f5; }
 
 .free-menu {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   top: 0;
@@ -422,6 +422,132 @@ header {
   align-items: center;
   padding: 3rem;
   border-bottom: 2px solid #1e1e1e; }
+
+.hero-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid purple;
+  margin-bottom: 50px;
+  padding: 200px 0; }
+  .hero-form h1 {
+    display: flex;
+    font-size: 40px; }
+
+.main-form .container .client-form .form-wrapper {
+  width: 100%; }
+  .main-form .container .client-form .form-wrapper form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; }
+    .main-form .container .client-form .form-wrapper form .client-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .main-form .container .client-form .form-wrapper form .client-wrapper .partner-client {
+        pointer-events: none;
+        opacity: 30%; }
+        .main-form .container .client-form .form-wrapper form .client-wrapper .partner-client .client-marriage {
+          pointer-events: none; }
+      .main-form .container .client-form .form-wrapper form .client-wrapper .main-client h2,
+      .main-form .container .client-form .form-wrapper form .client-wrapper .partner-client h2 {
+        display: block;
+        color: purple;
+        font-size: 25px; }
+      .main-form .container .client-form .form-wrapper form .client-wrapper .main-client > *,
+      .main-form .container .client-form .form-wrapper form .client-wrapper .partner-client > * {
+        color: #757575; }
+        .main-form .container .client-form .form-wrapper form .client-wrapper .main-client > *::placeholder,
+        .main-form .container .client-form .form-wrapper form .client-wrapper .partner-client > *::placeholder {
+          color: #757575; }
+      .main-form .container .client-form .form-wrapper form .client-wrapper .main-client > input,
+      .main-form .container .client-form .form-wrapper form .client-wrapper .partner-client > input {
+        display: block;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: none;
+        border: 1px solid gray;
+        outline: none;
+        margin: 20px 0;
+        font-family: iran-sans;
+        width: 500px;
+        min-height: 60px; }
+        .main-form .container .client-form .form-wrapper form .client-wrapper .main-client > input:focus,
+        .main-form .container .client-form .form-wrapper form .client-wrapper .partner-client > input:focus {
+          border: 2px solid purple; }
+      .main-form .container .client-form .form-wrapper form .client-wrapper .main-client textarea,
+      .main-form .container .client-form .form-wrapper form .client-wrapper .partner-client textarea {
+        display: block;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: none;
+        border: 1px solid gray;
+        outline: none;
+        margin: 20px 0;
+        font-family: iran-sans;
+        width: 500px;
+        height: 150px;
+        resize: none; }
+      .main-form .container .client-form .form-wrapper form .client-wrapper .main-client .client-marriage,
+      .main-form .container .client-form .form-wrapper form .client-wrapper .partner-client .client-marriage {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 500px;
+        min-height: 60px;
+        border: 1px solid gray;
+        padding: 10px 20px;
+        border-radius: 20px; }
+        .main-form .container .client-form .form-wrapper form .client-wrapper .main-client .client-marriage input,
+        .main-form .container .client-form .form-wrapper form .client-wrapper .partner-client .client-marriage input {
+          margin-left: 5px;
+          min-height: 25px;
+          min-width: 25px; }
+        .main-form .container .client-form .form-wrapper form .client-wrapper .main-client .client-marriage label,
+        .main-form .container .client-form .form-wrapper form .client-wrapper .partner-client .client-marriage label {
+          margin-left: 30px; }
+      .main-form .container .client-form .form-wrapper form .client-wrapper .main-client .client-evaluate-degree,
+      .main-form .container .client-form .form-wrapper form .client-wrapper .partner-client .client-evaluate-degree {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: center;
+        width: 500px;
+        min-height: 60px;
+        border: 1px solid gray;
+        padding: 10px 20px;
+        border-radius: 20px; }
+        .main-form .container .client-form .form-wrapper form .client-wrapper .main-client .client-evaluate-degree > label,
+        .main-form .container .client-form .form-wrapper form .client-wrapper .partner-client .client-evaluate-degree > label {
+          margin-bottom: 20px;
+          padding-top: 10px; }
+        .main-form .container .client-form .form-wrapper form .client-wrapper .main-client .client-evaluate-degree div,
+        .main-form .container .client-form .form-wrapper form .client-wrapper .partner-client .client-evaluate-degree div {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .main-form .container .client-form .form-wrapper form .client-wrapper .main-client .client-evaluate-degree div input,
+          .main-form .container .client-form .form-wrapper form .client-wrapper .partner-client .client-evaluate-degree div input {
+            margin-left: 5px;
+            min-height: 25px;
+            min-width: 25px; }
+          .main-form .container .client-form .form-wrapper form .client-wrapper .main-client .client-evaluate-degree div label,
+          .main-form .container .client-form .form-wrapper form .client-wrapper .partner-client .client-evaluate-degree div label {
+            margin-left: 30px; }
+    .main-form .container .client-form .form-wrapper form button {
+      width: 100%;
+      height: 50px;
+      outline: none;
+      border: none;
+      color: #f5f5f5;
+      font-family: iran-sans;
+      margin-bottom: 50px; }
+
+*[required] {
+  border-right: 5px solid purple !important; }
 
 @media (max-width: 1024px) {
   .header .hero .container .hero-content h1 {

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Pargas: Your expert in immigration and legal matters in Canada. Trust us for a secure immigration experience to Canada.">
+    <title>PARGAS immigration & legal proffesional</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="resources/images/fav-icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="resources/styles/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header-form" class="header-form">
+        <!-- header navbar -->
+        <div class="navbar-wrapper">
+            <div class="container">
+                <div class="navbar">
+                    <!-- header menu  -->
+                    <i class="fas fa-bars" onclick="toggleContent()"></i>
+
+                    <div class="header-menu">
+                        <ul class="header-menu-links">
+                            <li><a href="index.html" target="_blank" class="selected">خانه</a></li>
+                            <li><a href="#" target="_blank">خدمات</a></li>
+                            <li><a href="#" target="_blank">سوالات متداول</a></li>
+                            <li><a href="#" target="_blank">بلاگ</a></li>
+                            <li><a href="#" target="_blank">تماس با ما</a></li>
+                        </ul>
+                        <!-- header button -->
+                        <div class="header-menu-buttons">
+                            <!-- <a href="#" target="_blank" class="btn btn-primary">مشاوره رایگان</a> -->
+                            <a href="form.html" target="_blank" class="btn btn-primary">فرم ارزیابی رایگان</a>
+                        </div>
+                    </div>
+                    <!-- header logo -->
+                    <div class="header-logo">
+                        <a href="index.html"><img src="resources/images/logo.jpeg" alt="pargag logo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-form">
+            <h1><strong>فرم ارزیابی مهاجرت کانادا</strong></h1>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main id="main-form" class="main-form">
+        <div class="container">
+            <div class="client-form">
+                <div class="form-wrapper">
+                    <form action="#">
+                        <div class="client-wrapper">
+                            <!-- main client -->
+                            <div class="main-client">
+                                <h2>مشخصات متقاضی</h2>
+                                <!-- name -->
+                                <input type="text" name="" placeholder="نام" required id="client-name">
+
+                                <!-- family -->
+                                <input type="text" name="" placeholder="نام خانوادگی" required id="client-name">
+
+                                <!-- age -->
+                                <input type="text" name="" placeholder="سن" required id="client-age">
+
+                                <!-- country -->
+                                <input type="text" name="" placeholder="کشور محل اقامت" required id="client-country">
+
+                                <!-- province -->
+                                <input type="text" name="" placeholder="استان محل اقامت" required id="client-province">
+
+                                <!-- marriage -->
+                                <!-- <div class="client-marriage">
+                                    <label>وضعیت تاهل</label>
+                                    <input type="radio" name="maritalStatus" value="married" id="is-married">
+                                    <label>متاهل</label>
+
+                                    <input type="radio" name="maritalStatus" value="single" id="is-single">
+                                    <label>مجرد</label>
+
+                                    <input type="radio" name="maritalStatus" value="divorced" is="is-divorced">
+                                    <label>متارکه</label>
+                                </div> -->
+
+
+                                <div class="client-marriage" required>
+                                    <label>وضعیت تاهل</label>
+                                    <input type="radio" name="maritalStatus" value="married" id="is-married">
+                                    <label for="is-married">متاهل</label>
+
+                                    <input type="radio" name="maritalStatus" value="single" id="is-single">
+                                    <label for="is-single">مجرد</label>
+
+                                    <input type="radio" name="maritalStatus" value="divorced" id="is-divorced">
+                                    <label for="is-divorced">متارکه</label>
+                                </div>
+
+                                <!-- mobile -->
+                                <input type="number" name="" placeholder="شماره موبایل" required id="client-mobile">
+
+                                <!-- phone -->
+                                <input type="number" name="" placeholder="شماره تلفن" id="client-phone">
+
+                                <!-- whatsapp -->
+                                <input type="number" name="" placeholder="شماره واتس اپ" id="client-whatsapp">
+
+                                <!-- email -->
+                                <input type="email" name="" placeholder="پست الکترونیکی  (ایمیل)" required
+                                    id="client-email">
+
+
+                                <!-- education level -->
+                                <input type="text" name="" placeholder="میزان تحصیلات" required
+                                    id="client-education-level">
+
+                                <!-- education field -->
+                                <input type="text" name="" placeholder="رشته تحصیلی" required
+                                    id="client-education-field">
+
+
+                                <!-- evaluate degree -->
+                                <div class="client-evaluate-degree" required>
+                                    <label>آیا شما مدارک خود را در کانادا ارزشیابی رسمی کرده اید؟
+                                    </label>
+                                    <div>
+                                        <input type="radio" name="evaluateDegree" value="yes">
+                                        <label>بله</label>
+
+                                        <input type="radio" name="evaluateDegree" value="no">
+                                        <label>خیر</label>
+
+                                        <input type="radio" name="evaluateDegree" value="inProcess">
+                                        <label>در دست اقدام</label>
+                                    </div>
+
+                                </div>
+
+                                <!-- English -->
+                                <input type="text" name="" placeholder="آشنایی با زبان انگلیسی" required
+                                    id="client-english">
+
+
+                                <!-- English -->
+                                <input type="text" name="" placeholder="مدرکت زبان انگلیسی" required
+                                    id="client-english-certificate">
+
+                                <!-- English -->
+                                <input type="text" name="" placeholder="نمره زبان انگلیسی (Overall / R / W / S / L)"
+                                    id="client-english-score">
+
+
+
+
+                                <!-- French -->
+                                <input type="text" name="" placeholder="آشنایی با زبان فرانسوی" id="client-french">
+
+
+                                <!-- French -->
+                                <input type="text" name="" placeholder="مدرکت زبان فرانسوی"
+                                    id="client-french-certificate">
+
+                                <!-- French -->
+                                <input type="text" name="" placeholder="نمره زبان فرانسوی (Overall / R / W / S / L)"
+                                    id="client-french-score">
+
+
+
+                                <!-- wanna study? -->
+                                <input type="text" name=""
+                                    placeholder="آیا مایل به تحصیل در کانادا هستید ؟ در چه مقطعی ؟"
+                                    id="client-wanna-study">
+
+                                <!-- money -->
+                                <input type="text" name=""
+                                    placeholder="چقدر پول برای یک سال تحصیل خود در کانادا دارید (دلار آزاد کانادا)؟"
+                                    id="client-money">
+
+
+
+
+                                <!-- exprience -->
+                                <textarea type="text" name="" placeholder="سابقه کار در ده سال گذشته"
+                                    id="client-exprience"></textarea>
+
+
+                                <!-- management -->
+                                <textarea type="text" name="" placeholder="سابقه مدیریت "
+                                    id="client-management"></textarea>
+
+
+                                <!-- canada job position -->
+                                <textarea type="text" name="" placeholder="سابقه کار شما در کانادا در ده سال گذشته "
+                                    id="client-exprience-canada"></textarea>
+
+
+
+                                <!-- management -->
+                                <textarea type="text" name="" placeholder="سابقه مدیریت "
+                                    id="client-management"></textarea>
+
+
+
+                                <!-- job offer -->
+                                <input type="text" name="" placeholder="آیا از کانادا پیشنهاد شغلی دارید؟"
+                                    id="client-job-offer">
+
+
+                                <!-- are you bussiness owner -->
+                                <textarea type="text" name=""
+                                    placeholder="در پنج سال گذشته چند سال در مقام مالک یک واحد تجاری یا مدیر ارشد یک شرکت معتبر فعالیت داشته اید؟"
+                                    id="client-business-owner"></textarea>
+
+
+
+                                <!-- investing -->
+                                <input type="text" name=""
+                                    placeholder="چه مقدار قادر به سرمایه گذاری در این کشور هستید؟"
+                                    id="client-investing">
+
+
+
+                                <!-- have cash -->
+                                <input type="text" name=""
+                                    placeholder="آیا برای این سرمایه گذاری به نقدینگی کافی دسترسی دارید؟"
+                                    id="client-have-cash">
+
+
+                                <!-- sport and culture -->
+                                <textarea type="text" name=""
+                                    placeholder="در پنج سال گذشته چند سال خوداشتغال بوده‌اید (در حوزه فرهنگ یا ورزش)؟"
+                                    id="client-sport"></textarea>
+
+                                <!-- founder -->
+                                <textarea type="text" name=""
+                                    placeholder="به طور مختصر توضیح بدهید در چه زمینه‌ای فعال هستید؟ (فعالیت خوداشتغالی)"
+                                    id="client-founder"></textarea>
+
+
+                                <!-- enough income -->
+                                <textarea type="text" name=""
+                                    placeholder="آیا درآمد شما از محل خوداشتغالی در حدی بوده که هزینه‌های زندگی شما و خانواده (همسر و فرزندان) شما را پوشش دهد؟"
+                                    id="client-income"></textarea>
+
+
+                                <!-- evidence -->
+                                <input type="text" name=""
+                                    placeholder="آیا می‌توانید برای اثبات درآمد و دارایی خود مدارک محکم ارائه کنید؟"
+                                    id="client-evidence">
+
+                                <!-- invest amount -->
+                                <input type="text" name=""
+                                    placeholder="چقدر می‌توانید در کانادا سرمایه‌گذاری کنید (برای فعالیت خوداشتغالی خود)؟"
+                                    id="client-invest-owner">
+
+                                <!-- visa request -->
+                                <textarea type="text" name=""
+                                    placeholder="آیا تا کنون درخواست سفر به کانادا کرده اید ؟ مسافرت کرده اید یا درخواست شما رد شده است ؟ لطفا توضیح دهید"
+                                    id="client-visa-request"></textarea>
+
+
+                                <!-- family -->
+                                <textarea type="text" name=""
+                                    placeholder="آیا از بستگان درجه یک شما یا همسرتان کسی اقامت کانادا را دارد ؟ (لطفا نسبت تان را بنویسید). در کدام استان ساکن هستند ؟"
+                                    id="client-family"></textarea>
+
+
+                                <!-- friend -->
+                                <textarea type="text" name=""
+                                    placeholder="آیا از دوستان شما یا همسرتان کسی اقامت کانادا را دارد ؟ در کدام استان ساکن هستند ؟"
+                                    id="client-friend"></textarea>
+                            </div>
+
+
+
+                            <!-- partner client -->
+                            <div class="partner-client" id="partner-client">
+                                <h2>مشخصات همسر متقاضی</h2>
+                                <!-- name -->
+                                <input type="text" name="" placeholder="نام" id="client-partner-name">
+
+                                <!-- family -->
+                                <input type="text" name="" placeholder="نام خانوادگی" id="client-partner-name">
+
+                                <!-- age -->
+                                <input type="text" name="" placeholder="سن" id="client-partner-age">
+
+                                <!-- country -->
+                                <input type="text" name="" placeholder="کشور محل اقامت" id="client-partner-country">
+
+                                <!-- province -->
+                                <input type="text" name="" placeholder="استان محل اقامت" id="client-partner-province">
+
+                                <div class="client-marriage">
+                                    <label>وضعیت تاهل</label>
+                                    <input type="radio" name="" value="married" id="is-married-partner" checked>
+                                    <label for="is-married-partner">متاهل</label>
+
+                                    <input type="radio" name="" value="single" id="is-single-partner">
+                                    <label for="is-single-partner">مجرد</label>
+
+                                    <input type="radio" name="" value="divorced" id="is-divorced-partner">
+                                    <label for="is-divorced-partner">متارکه</label>
+                                </div>
+
+                                <!-- mobile -->
+                                <input type="number" name="" placeholder="شماره موبایل" id="client-partner-mobile">
+
+                                <!-- phone -->
+                                <input type="number" name="" placeholder="شماره تلفن" id="client-partner-phone">
+
+                                <!-- whatsapp -->
+                                <input type="number" name="" placeholder="شماره واتس اپ" id="client-partner-whatsapp">
+
+                                <!-- email -->
+                                <input type="email" name="" placeholder="پست الکترونیکی  (ایمیل)"
+                                    id="client-partner-email">
+
+
+                                <!-- education level -->
+                                <input type="text" name="" placeholder="میزان تحصیلات"
+                                    id="client-partner-education-level">
+
+                                <!-- education field -->
+                                <input type="text" name="" placeholder="رشته تحصیلی"
+                                    id="client-partner-education-field">
+
+
+                                <!-- evaluate degree -->
+                                <div class="client-evaluate-degree">
+                                    <label>آیا شما مدارک خود را در کانادا ارزشیابی رسمی کرده اید؟
+                                    </label>
+                                    <div>
+                                        <input type="radio" name="evaluateDegree" value="yes">
+                                        <label>بله</label>
+
+                                        <input type="radio" name="evaluateDegree" value="no">
+                                        <label>خیر</label>
+
+                                        <input type="radio" name="evaluateDegree" value="inProcess">
+                                        <label>در دست اقدام</label>
+                                    </div>
+
+                                </div>
+
+                                <!-- English -->
+                                <input type="text" name="" placeholder="آشنایی با زبان انگلیسی"
+                                    id="client-partner-english">
+
+
+                                <!-- English -->
+                                <input type="text" name="" placeholder="مدرکت زبان انگلیسی"
+                                    id="client-partner-english-certificate">
+
+                                <!-- English -->
+                                <input type="text" name="" placeholder="نمره زبان انگلیسی (Overall / R / W / S / L)"
+                                    id="client-partner-english-score">
+
+
+
+
+                                <!-- English -->
+                                <input type="text" name="" placeholder="آشنایی با زبان فرانسوی"
+                                    id="client-partner-french">
+
+
+                                <!-- English -->
+                                <input type="text" name="" placeholder="مدرکت زبان فرانسوی"
+                                    id="client-partner-french-certificate">
+
+                                <!-- English -->
+                                <input type="text" name="" placeholder="نمره زبان فرانسوی (Overall / R / W / S / L)"
+                                    id="client-partner-french-score">
+
+
+
+                                <!-- wanna study? -->
+                                <input type="text" name=""
+                                    placeholder="آیا مایل به تحصیل در کانادا هستید ؟ در چه مقطعی ؟"
+                                    id="client-partner-wanna-study">
+
+                                <!-- money -->
+                                <input type="text" name=""
+                                    placeholder="چقدر پول برای یک سال تحصیل خود در کانادا دارید (دلار آزاد کانادا)؟"
+                                    id="client-partner-money">
+
+
+
+
+                                <!-- exprience -->
+                                <textarea type="text" name="" placeholder="سابقه کار در ده سال گذشته"
+                                    id="client-partner-exprience"></textarea>
+
+
+                                <!-- management -->
+                                <textarea type="text" name="" placeholder="سابقه مدیریت "
+                                    id="client-partner-management"></textarea>
+
+
+                                <!-- canada job position -->
+                                <textarea type="text" name="" placeholder="سابقه کار شما در کانادا در ده سال گذشته "
+                                    id="client-partner-exprience-canada"></textarea>
+
+
+                                <!-- management -->
+                                <textarea type="text" name="" placeholder="سابقه مدیریت "
+                                    id="client-partner-management"></textarea>
+
+
+
+                                <!-- job offer -->
+                                <input type="text" name="" placeholder="آیا از کانادا پیشنهاد شغلی دارید؟"
+                                    id="client-partner-job-offer">
+
+
+                                <!-- are you bussiness owner -->
+                                <textarea type="text" name=""
+                                    placeholder="در پنج سال گذشته چند سال در مقام مالک یک واحد تجاری یا مدیر ارشد یک شرکت معتبر فعالیت داشته اید؟"
+                                    id="client-partner-business-owner"></textarea>
+
+
+
+                                <!-- investing -->
+                                <input type="text" name=""
+                                    placeholder="چه مقدار قادر به سرمایه گذاری در این کشور هستید؟"
+                                    id="client-partner-investing">
+
+
+
+                                <!-- have cash -->
+                                <input type="text" name=""
+                                    placeholder="آیا برای این سرمایه گذاری به نقدینگی کافی دسترسی دارید؟"
+                                    id="client-partner-have-cash">
+
+
+                                <!-- sport and culture -->
+                                <textarea type="text" name=""
+                                    placeholder="در پنج سال گذشته چند سال خوداشتغال بوده‌اید (در حوزه فرهنگ یا ورزش)؟"
+                                    id="client-partner-sport"></textarea>
+
+                                <!-- founder -->
+                                <textarea type="text" name=""
+                                    placeholder="به طور مختصر توضیح بدهید در چه زمینه‌ای فعال هستید؟ (فعالیت خوداشتغالی)"
+                                    id="client-partner-founder"></textarea>
+
+
+                                <!-- enough income -->
+                                <textarea type="text" name=""
+                                    placeholder="آیا درآمد شما از محل خوداشتغالی در حدی بوده که هزینه‌های زندگی شما و خانواده (همسر و فرزندان) شما را پوشش دهد؟"
+                                    id="client-partner-income"></textarea>
+
+
+                                <!-- evidence -->
+                                <input type="text" name=""
+                                    placeholder="آیا می‌توانید برای اثبات درآمد و دارایی خود مدارک محکم ارائه کنید؟"
+                                    id="client-partner-evidence">
+
+                                <!-- invest amount -->
+                                <input type="text" name=""
+                                    placeholder="چقدر می‌توانید در کانادا سرمایه‌گذاری کنید (برای فعالیت خوداشتغالی خود)؟"
+                                    id="client-partner-invest-owner">
+
+                                <!-- visa request -->
+                                <textarea type="text" name=""
+                                    placeholder="آیا تا کنون درخواست سفر به کانادا کرده اید ؟ مسافرت کرده اید یا درخواست شما رد شده است ؟ لطفا توضیح دهید"
+                                    id="client-partner-visa-request"></textarea>
+
+
+                                <!-- family -->
+                                <textarea type="text" name=""
+                                    placeholder="آیا از بستگان درجه یک شما یا همسرتان کسی اقامت کانادا را دارد ؟ (لطفا نسبت تان را بنویسید). در کدام استان ساکن هستند ؟"
+                                    id="client-partner-family"></textarea>
+
+
+                                <!-- friend -->
+                                <textarea type="text" name=""
+                                    placeholder="آیا از دوستان شما یا همسرتان کسی اقامت کانادا را دارد ؟ در کدام استان ساکن هستند ؟"
+                                    id="client-partner-friend"></textarea>
+
+
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">ارسال فرم درخواست</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-telegram"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="copyright">
+                <i class="fa fa-copyright"></i>
+                تمامی حقوق برای PARGAS immigration & legal proffesional محفوظ می باشد.
+
+            </div>
+
+
+
+        </div>
+        <div class="footer-end">
+            <div class="designer">
+                <a href="https://navan.one">Designed By NAVAN</a>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Other codes  -->
+    <div class="free-menu ">
+        <i class="fas fa-times close" onclick="toggleContentClose()"></i>
+        <ul class="header-menu">
+
+            <li><a href="index.html" target="_blank" class="selected">خانه</a></li>
+            <li><a href="#" target="_blank">خدمات</a></li>
+            <li><a href="#" target="_blank">سوالات متداول</a></li>
+            <li><a href="#" target="_blank">بلاگ</a></li>
+            <li><a href="#" target="_blank">تماس با ما</a></li>
+        </ul>
+
+        <p class="copy">
+            <i class="fa fa-copyright "></i>
+            CopyRight 2023
+        </p>
+    </div>
+
+
+    <!-- scripts -->
+    <script src="resources/scripts/script.js"></script>
+    <script src="resources/scripts/form.js"></script>
+</body>
+
+</html>

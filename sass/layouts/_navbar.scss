@@ -1,55 +1,113 @@
-header {
+// header {
+//     width: 100%;
+
+//     .navbar-wrapper {
+//         width: 100%;
+//         position: absolute;
+//         // border-bottom: 2px solid $primary-color;
+//         background: rgba(255, 255, 255, 0.9);
+//         box-shadow: 0 8px 6px -6px purple;
+//         z-index: 50;
+
+//         .container {
+//             .navbar {
+//                 display: flex;
+//                 align-items: center;
+//                 padding: $padding 0;
+//                 justify-content: space-between;
+
+//                 i {
+//                     display: flex;
+//                     justify-content: center;
+//                     align-items: center;
+//                     border: 2px solid $primary-color;
+//                     border-radius: $button-border-radius;
+//                     padding: 0.6rem;
+//                     display: none;
+//                     font-size: 20px;
+//                     color: $primary-color;
+//                 }
+
+//                 .header-menu {
+//                     display: flex;
+//                     align-items: center;
+
+//                     &-links {
+//                         display: flex;
+//                         padding-left: 1.5rem;
+
+//                         li {
+//                             a {
+//                                 padding: 0.5rem 1rem;
+//                             }
+//                         }
+//                     }
+//                 }
+
+//                 .header-logo {
+//                     padding: 0.7rem 0;
+
+//                     img {
+//                         width: 200px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+
+.navbar-wrapper {
     width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    // border-bottom: 2px solid $primary-color;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 6px -6px purple;
+    z-index: 50;
 
-    .navbar-wrapper {
-        width: 100%;
-        position: absolute;
-        // border-bottom: 2px solid $primary-color;
-        background: rgba(255, 255, 255, 0.9);
-        box-shadow: 0 8px 6px -6px purple;
-        z-index: 50;
+    .container {
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: $padding 0;
+            justify-content: space-between;
 
-        .container {
-            .navbar {
+            i {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid $primary-color;
+                border-radius: $button-border-radius;
+                padding: 0.6rem;
+                display: none;
+                font-size: 20px;
+                color: $primary-color;
+            }
+
+            .header-menu {
                 display: flex;
                 align-items: center;
-                padding: $padding 0;
-                justify-content: space-between;
 
-                i {
+                &-links {
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border: 2px solid $primary-color;
-                    border-radius: $button-border-radius;
-                    padding: 0.6rem;
-                    display: none;
-                    font-size: 20px;
-                    color: $primary-color;
-                }
+                    padding-left: 1.5rem;
 
-                .header-menu {
-                    display: flex;
-                    align-items: center;
-
-                    &-links {
-                        display: flex;
-                        padding-left: 1.5rem;
-
-                        li {
-                            a {
-                                padding: 0.5rem 1rem;
-                            }
+                    li {
+                        a {
+                            padding: 0.5rem 1rem;
                         }
                     }
                 }
+            }
 
-                .header-logo {
-                    padding: 0.7rem 0;
+            .header-logo {
+                padding: 0.7rem 0;
 
-                    img {
-                        width: 200px;
-                    }
+                img {
+                    width: 200px;
                 }
             }
         }
