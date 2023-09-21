@@ -130,18 +130,18 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
 
 
 
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === XMLHttpRequest.DONE) {
-            if (xhr.status === 200) {
-                showNotification('اطلاعات شما با موفقیت ارسال شد . . .', 2000);
+    // xhr.onreadystatechange = function () {
+    //     if (xhr.readyState === XMLHttpRequest.DONE) {
+    //         if (xhr.status === 200) {
+    //             showNotification('اطلاعات شما با موفقیت ارسال شد . . .', 2000);
 
-                form.reset();
-            } else {
-                showNotification('خطا در ارسال اطلاعات', 2000);
-                console.error('Form submission failed');
-            }
-        }
-    };
+    //             form.reset();
+    //         } else {
+    //             showNotification('خطا در ارسال اطلاعات', 2000);
+    //             console.error('Form submission failed');
+    //         }
+    //     }
+    // };
 
     const encodedData = new URLSearchParams(formData).toString();
     xhr.send(encodedData);
