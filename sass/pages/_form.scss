@@ -1,16 +1,27 @@
 .hero-form {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     // height: 10vh;
     border-bottom: 2px solid $primary-color;
     margin-bottom: 50px;
     padding: 200px 0;
+    padding-bottom: 140px;
 
     h1 {
         display: flex;
         font-size: 40px;
+        margin-bottom: 40px;
     }
+
+    p {
+        text-align: center;
+        max-width: 60%;
+        font-size: 18px;
+        line-height: 2;
+    }
+
 }
 
 .main-form {
@@ -173,4 +184,15 @@
 
 *[required] {
     border-right: 5px solid $primary-color !important;
+}
+
+.notification {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 25px 35px;
+    border-radius: 5px;
+    display: none;
 }

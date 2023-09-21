@@ -426,13 +426,21 @@ body {
 .hero-form {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   border-bottom: 2px solid purple;
   margin-bottom: 50px;
-  padding: 200px 0; }
+  padding: 200px 0;
+  padding-bottom: 140px; }
   .hero-form h1 {
     display: flex;
-    font-size: 40px; }
+    font-size: 40px;
+    margin-bottom: 40px; }
+  .hero-form p {
+    text-align: center;
+    max-width: 60%;
+    font-size: 18px;
+    line-height: 2; }
 
 .main-form .container .client-form .form-wrapper {
   width: 100%; }
@@ -548,6 +556,16 @@ body {
 
 *[required] {
   border-right: 5px solid purple !important; }
+
+.notification {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 25px 35px;
+  border-radius: 5px;
+  display: none; }
 
 @media (max-width: 1024px) {
   .header .hero .container .hero-content h1 {
