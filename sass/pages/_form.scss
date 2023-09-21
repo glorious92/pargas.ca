@@ -55,6 +55,8 @@
 
                         .main-client,
                         .partner-client {
+                            width: 100%;
+                            padding: 10px;
 
                             h2 {
                                 display: block;
@@ -70,24 +72,7 @@
                                 }
                             }
 
-                            &>input {
-                                display: block;
-                                padding: 10px 20px;
-                                border-radius: 20px;
-                                border: none;
-                                border: 1px solid gray;
-                                outline: none;
-                                margin: 20px 0;
-                                font-family: iran-sans;
-                                width: 500px;
-                                min-height: 60px;
-
-                                &:focus {
-                                    border: 2px solid $primary-color;
-                                }
-
-                            }
-
+                            &>input,
                             textarea {
                                 display: block;
                                 padding: 10px 20px;
@@ -97,20 +82,31 @@
                                 outline: none;
                                 margin: 20px 0;
                                 font-family: iran-sans;
-                                width: 500px;
-                                height: 150px;
+                                font-size: 10px;
+                                width: 100%;
+                                min-height: 60px;
+
+                                &:focus {
+                                    border: 2px solid $primary-color;
+                                }
+
+                            }
+
+                            textarea {
+                                height: 120px;
                                 resize: none;
                             }
 
                             .client-marriage {
                                 display: flex;
                                 align-items: center;
-                                justify-content: space-between;
-                                width: 500px;
+                                justify-content: start;
+                                width: 100%;
                                 min-height: 60px;
                                 border: 1px solid gray;
                                 padding: 10px 20px;
                                 border-radius: 20px;
+                                font-size: 10px;
 
                                 input {
                                     margin-left: 5px;
@@ -124,11 +120,12 @@
                             }
 
                             .client-evaluate-degree {
+                                font-size: 10px;
                                 display: flex;
                                 align-items: start;
                                 flex-direction: column;
-                                justify-content: center;
-                                width: 500px;
+                                justify-content: start;
+                                width: 100%;
                                 min-height: 60px;
                                 border: 1px solid gray;
                                 padding: 10px 20px;
@@ -154,11 +151,6 @@
                                         margin-left: 30px;
                                     }
                                 }
-
-
-
-
-
                             }
 
 
@@ -174,7 +166,13 @@
                         color: $light-color;
                         font-family: iran-sans;
                         margin-bottom: 50px;
-                        // border-radius: 20px;
+                        border-radius: 15px;
+                        cursor: pointer;
+
+                    }
+
+                    button:hover {
+                        opacity: 85%;
                     }
                 }
             }
@@ -192,7 +190,8 @@
     right: 30px;
     background-color: #4CAF50;
     color: #fff;
-    padding: 25px 35px;
+    padding: 15px 35px;
     border-radius: 5px;
     display: none;
+    z-index: 100;
 }

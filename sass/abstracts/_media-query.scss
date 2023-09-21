@@ -313,6 +313,18 @@
         }
 
     }
+
+    // form
+
+    .client-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
 }
 
 // up to 700px
@@ -437,6 +449,17 @@
 
             }
 
+        }
+    }
+
+    // form
+    .hero-form {
+        h1 {
+            font-size: 25px;
+        }
+
+        p {
+            max-width: 90%;
         }
     }
 }

@@ -4,11 +4,14 @@ const isSingleRadio = document.getElementById("is-single");
 const isDivorcedRadio = document.getElementById("is-divorced");
 const isPartnerMarriedRadio = document.getElementById(`is-married-partner`);
 const partnerPartnerClient = document.querySelector(`#partner-client .client-marriage`);
+
 isMarriedRadio.addEventListener("change", togglePartnerClient);
 isSingleRadio.addEventListener("change", togglePartnerClient);
 isDivorcedRadio.addEventListener("change", togglePartnerClient);
 
+const formWrapper = document.getElementById('contact-form');
 
+const buttonSend = document.getElementById('button-send');
 // const contactForm = document.getElementById('contact-form');
 const notification = document.getElementById('notification');
 
@@ -50,6 +53,8 @@ togglePartnerClient();
 
 // notification
 function showNotification(message, duration) {
+
+
     notification.textContent = message;
     notification.style.display = 'block';
 
@@ -59,8 +64,95 @@ function showNotification(message, duration) {
 }
 
 
+
+formWrapper.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // let assistant;
+    // assistant = buttonSend.innerText;
+    // buttonSend.innerText = "در حال ارسال اطلاعات...";
+    // buttonSend.style.visibility = 'none';
+    // Example using the fetch API:
+    fetch(this.action, {
+        method: this.method,
+        body: new FormData(this)
+
+    })
+        .then(response => {
+            if (response.ok) {
+                formWrapper.reset();
+                notification.style.backgroundColor = 'green';
+                showNotification('اطلاعات شما با موفقیت ارسال شد', 2000);
+
+            } else {
+                notification.style.backgroundColor = 'green';
+                showNotification('ارسال اطلاعات ناموفق بود', 2000);
+                console.error(error);
+
+            }
+        })
+        .catch(error => {
+            console.error(error);
+            notification.style.backgroundColor = 'red';
+            showNotification('ارسال اطلاعات ناموفق بود', 2000);
+        });
+    // buttonSend.innerText = assistant;
+    // buttonSend.style.visibility = 'unset';
+
+});
+
+
+
+
+
+
 // form submission
-// document.getElementById('contact-form').addEventListener('submit', function (e) {
+
+// formWrapper.addEventListener('submit', function (e) {
+//     e.preventDefault(); // Prevent the default form submission
+
+//     // You can perform any additional actions here before submitting to Google Forms
+
+//     // Submit the form to Google Forms programmatically using JavaScript
+//     const form = e.target;
+//     const formData = new FormData(form);
+//     const xhr = new XMLHttpRequest();
+
+//     xhr.open('POST', form.action, true);
+//     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+//     showNotification('اطلاعات شما با موفقیت ارسال شد . . .', 2000);
+
+//     form.reset();
+
+
+//     // xhr.onreadystatechange = function () {
+//     //     if (xhr.readyState === XMLHttpRequest.DONE) {
+//     //         if (xhr.status === 200) {
+//     //             showNotification('اطلاعات شما با موفقیت ارسال شد . . .', 2000);
+
+//     //             form.reset();
+//     //         } else {
+//     //            
+//     //             console.error('Form submission failed');
+//     //         }
+//     //     }
+//     // };
+
+//     const encodedData = new URLSearchParams(formData).toString();
+//     xhr.send(encodedData);
+// });
+
+
+
+
+
+
+
+
+
+
+// form submission
+// form.addEventListener('submit', function (e) {
 //     e.preventDefault(); // Prevent the default form submission
 
 //     // You can perform any additional actions here before submitting to Google Forms
@@ -112,38 +204,4 @@ function showNotification(message, duration) {
 
 
 
-
-
-// form submission
-document.getElementById('contact-form').addEventListener('submit', function (e) {
-    e.preventDefault(); // Prevent the default form submission
-
-    // You can perform any additional actions here before submitting to Google Forms
-
-    // Submit the form to Google Forms programmatically using JavaScript
-    const form = e.target;
-    const formData = new FormData(form);
-    const xhr = new XMLHttpRequest();
-
-    xhr.open('POST', form.action, true);
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-
-
-
-    // xhr.onreadystatechange = function () {
-    //     if (xhr.readyState === XMLHttpRequest.DONE) {
-    //         if (xhr.status === 200) {
-    //             showNotification('اطلاعات شما با موفقیت ارسال شد . . .', 2000);
-
-    //             form.reset();
-    //         } else {
-    //             showNotification('خطا در ارسال اطلاعات', 2000);
-    //             console.error('Form submission failed');
-    //         }
-    //     }
-    // };
-
-    const encodedData = new URLSearchParams(formData).toString();
-    xhr.send(encodedData);
-});
 
