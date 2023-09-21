@@ -1,6 +1,6 @@
 @font-face {
   font-family: iran-sans;
-  src: url(/resources/fonts/IranSans.ttf); }
+  src: url(../fonts/IranSans.ttf); }
 
 html {
   font-size: 12px; }
@@ -33,6 +33,11 @@ body {
   font-family: iran-sans;
   direction: rtl;
   height: 3000px; }
+
+form .input,
+form .textarea,
+form .button {
+  font-family: iran-sans; }
 
 .btn {
   display: inline-flex;
