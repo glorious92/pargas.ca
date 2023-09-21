@@ -128,22 +128,20 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     xhr.open('POST', form.action, true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
-    showNotification('اطلاعات شما با موفقیت ارسال شد . . .', 2000);
 
-    form.reset();
 
-    // xhr.onreadystatechange = function () {
-    //     if (xhr.readyState === XMLHttpRequest.DONE) {
-    //         if (xhr.status === 200) {
-    //             // Form submission was successful
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                showNotification('اطلاعات شما با موفقیت ارسال شد . . .', 2000);
 
-    //         } else {
-    //             // Form submission failed
-    //             // You can add your own error handling code here
-    //             console.error('Form submission failed');
-    //         }
-    //     }
-    // };
+                form.reset();
+            } else {
+                showNotification('خطا در ارسال اطلاعات', 2000);
+                console.error('Form submission failed');
+            }
+        }
+    };
 
     const encodedData = new URLSearchParams(formData).toString();
     xhr.send(encodedData);
