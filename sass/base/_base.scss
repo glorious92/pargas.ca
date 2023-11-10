@@ -1,46 +1,44 @@
 html {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 p {
-    line-height: 1.7;
+  line-height: 1.7;
 }
 
 a {
-    text-decoration: none;
-    color: $dark-color;
-    cursor: pointer;
+  text-decoration: none;
+  color: $dark-color;
+  cursor: pointer;
 }
 
 ul,
 li {
-    list-style: none;
-    cursor: pointer;
+  list-style: none;
+  cursor: pointer;
 }
 
 img {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
-
 
 // body
 body {
-    font-family: iran-sans;
-    direction: rtl;
-    height: 3000px;
+  font-family: iran-sans;
+  direction: rtl;
 }
 
 form .input,
 form .textarea,
 form .button {
-    font-family: iran-sans;
+  font-family: iran-sans;
 }
