@@ -1,0 +1,65 @@
+.main-blog {
+  width: 100%;
+  margin: 75px 0;
+  .container {
+    h2 {
+      font-size: 25px;
+      margin: 25px 0;
+      color: $primary-color;
+    }
+    .blog-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+      .blog-card {
+        border: 1px solid $primary-color;
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+        transition: 0.5s;
+        figure {
+          img {
+            display: block;
+            width: 100%;
+            object-position: center;
+            object-fit: cover;
+            height: 200px;
+          }
+          h2 {
+            padding: 15px;
+            font-size: 15px;
+            padding-bottom: 5px;
+          }
+          h4 {
+            position: absolute;
+            padding: 5px;
+            border-radius: 5px;
+            top: 15px;
+            right: 15px;
+            color: $light-color;
+            background-color: rgba(255, 255, 255, 0.272);
+          }
+          figcaption {
+            padding: 15px;
+            padding-top: 5px;
+            max-height: 100px;
+            height: 100px;
+            overflow: hidden;
+          }
+        }
+        a {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          cursor: pointer;
+          transition: 0.5s;
+        }
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
