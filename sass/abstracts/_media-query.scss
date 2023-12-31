@@ -333,12 +333,31 @@
     .navbar-wrapper {
       .container {
         .navbar {
+          width: 100%;
+
           i {
             display: block;
+            border: 1px solid $primary-color;
+            padding: 0.5rem;
+            font-size: 17px;
           }
 
           .header-menu {
-            display: none;
+            display: flex;
+            justify-content: flex-end;
+
+            &-links {
+              display: none;
+            }
+            &-buttons {
+              display: flex !important;
+            }
+          }
+
+          .header-logo {
+            img {
+              width: 120px;
+            }
           }
         }
       }
